@@ -3,7 +3,7 @@
 #
 
 snippet cs "React.addons.classSet" b
-let cx = React.addons.classSet;
+let cx = React.addons.classSet
 endsnippet
 
 snippet cdm "component did mount" b
@@ -45,18 +45,18 @@ endsnippet
 snippet cx
 cx({
 	${1}: ${2}
-});
+})
 endsnippet
 
 snippet fup
-forceUpdate(${1:callback});
+forceUpdate(${1:callback})
 endsnippet
 
 snippet gdp "get default props" b
 getDefaultProps () {
 	return {
 		${1}
-	};
+	}
 },$0
 endsnippet
 
@@ -64,7 +64,7 @@ snippet gis "get initial state" b
 getInitialState () {
 	return {
 		${1}: ${2}
-	};
+	}
 },$0
 endsnippet
 
@@ -77,19 +77,19 @@ snippet jsx "define jsx dom" b
  * @jsx React.DOM
  */
 
-let React = require('react');
+let React = require('react')
 }
 let ${2:ClassName} = React.createClass({
 
 render () {
 	return (
 		${VISUAL}$4
-	);
+	)
 }
 
-});
+})
 $0
-${3:module.exports = $2;}
+${3:module.exports = $2}
 endsnippet
 
 snippet pt "propTypes" b
@@ -104,10 +104,10 @@ let ${1:ClassName} = React.createClass({
 render () {
 	return (
 		${VISUAL}$2
-	);
+	)
 }
 
-});
+})
 $0
 endsnippet
 
@@ -115,14 +115,14 @@ snippet ren
 render () {
 	return (
 		${1:<div />}
-	);
+	)
 }$0
 endsnippet
 
 snippet sst "set state" b
 this.setState({
 	${1}: ${2}
-});$0
+})$0
 endsnippet
 
 snippet scu "should component update"
@@ -140,5 +140,5 @@ this.state.${1}
 endsnippet
 
 snippet trp
-this.transferPropsTo(${VISUAL}$0);
+this.transferPropsTo(${VISUAL}$0)
 endsnippet

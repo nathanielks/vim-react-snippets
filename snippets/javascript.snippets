@@ -1,5 +1,5 @@
 snippet cs
-	let cx = React.addons.classSet;
+	let cx = React.addons.classSet
 snippet cdm
 	componentDidMount () {
 		${1}
@@ -27,20 +27,20 @@ snippet cwu
 snippet cx
 	cx({
 		${1}: ${2}
-	});
+	})
 snippet fup
-	forceUpdate(${1:callback});
+	forceUpdate(${1:callback})
 snippet gdp
 	getDefaultProps () {
 		return {
 			${1}
-		};
+		}
 	},
 snippet gis
 	getInitialState () {
 		return {
 			${1}: ${2}
-		};
+		}
 	},
 snippet ism
 	isMounted()
@@ -49,19 +49,19 @@ snippet jsx
 	 * @jsx React.DOM
 	 */
 
-	let React = require('react');
+	let React = require('react')
 
 	let ${1:ClassName} = React.createClass({
 
 		render () {
 			return (
 				${0:<div />}
-			);
+			)
 		}
 
-	});
+	})
 
-	module.exports = $1;
+	module.exports = $1
 snippet pt
 	propTypes: {
 		${1}: React.PropTypes.${2:string}
@@ -72,20 +72,20 @@ snippet rcc
 		render () {
 			return (
 				${0:<div />}
-			);
+			)
 		}
 
-	});
+	})
 snippet ren
 	render () {
 		return (
 			${1:<div />}
-		);
+		)
 	}
 snippet sst
 	setState({
 		${1}: ${2}
-	});
+	})
 snippet scu
 	shouldComponentUpdate (nextProps, nextState) {
 		${1}
@@ -95,4 +95,4 @@ snippet props
 snippet state
 	this.state.${1}
 snippet trp
-	transferPropsTo(${1});
+	transferPropsTo(${1})
