@@ -73,19 +73,15 @@ isMounted()
 endsnippet
 
 snippet jsx "define jsx dom" b
-/**
- * @jsx React.DOM
- */
-
 let React = require('react')
-}
+
 let ${2:ClassName} = React.createClass({
 
-render () {
-	return (
-		${VISUAL}$4
-	)
-}
+	render () {
+		return (
+			${VISUAL}$4
+		)
+	}
 
 })
 $0
