@@ -73,19 +73,18 @@ isMounted()
 endsnippet
 
 snippet jsx "define jsx dom" b
-let React = require('react')
+import React from 'react'
 
-let ${2:ClassName} = React.createClass({
+export default React.createClass({
 
 	render () {
 		return (
-			${VISUAL}$4
+			${VISUAL}$1
 		)
 	}
 
 })
 $0
-${3:module.exports = $2}
 endsnippet
 
 snippet pt "propTypes" b
